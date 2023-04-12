@@ -4,120 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Plant Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" async></script>
+    <title>Plants Store</title>
 </head>
 <body>
     <header>
-        <h1>Plant Shop</h1>
+        <h1>Plant shop</h1>
     </header>
     <section class="container">
-        <!-- container of the elements-->
-        <div class="items-container">
+        <!-- container items-->
+        <div class="container-items">
             <div class="item">
-                <span class="item-title">Box</span>
-                <img src="/plant-shop/imgs/img1.jpeg" alt="plantOne" class="img-item">
-                <span class="item-price">30€</span>
-                <button class="item-butom">Add to Cart</button>
+                <span class="item-title">Box Engasse</span>
+                <img src="imgs/img1.jpeg" alt="" class="img-item">
+                <span class="item-price">25€</span>
+                <button class="buttom-item">Add to cart</button>
             </div>
             <div class="item">
-                <span class="item-title">Box</span>
-                <img src="/plant-shop/imgs/img2.jpeg" alt="plantOne" class="img-item">
-                <span class="item-price">30€</span>
-                <button class="item-butom">Add to Cart</button>
+                <span class="item-title">English Horse</span>
+                <img src="imgs/img2.jpeg" alt="" class="img-item">
+                <span class="item-price">50€</span>
+                <button class="buttom-item">Add to cart</button>
             </div>
             <div class="item">
-                <span class="item-title">Box</span>
-                <img src="/plant-shop/imgs/img3.jpeg" alt="plantOne" class="img-item">
-                <span class="item-price">30€</span>
-                <button class="item-butom">Add to Cart</button>
+                <span class="item-title">Knock Nap</span>
+                <img src="imgs/img3.jpeg" alt="" class="img-item">
+                <span class="item-price">75€</span>
+                <button class="buttom-item">Add to cart</button>
             </div>
             <div class="item">
-                <span class="item-title">Box</span>
-                <img src="/plant-shop/imgs/img4.jpeg" alt="plantOne" class="img-item">
-                <span class="item-price">30€</span>
-                <button class="item-butom">Add to Cart</button>
+                <span class="item-title">La Night</span>
+                <img src="imgs/img4.jpeg" alt="" class="img-item">
+                <span class="item-price">100€</span>
+                <button class="buttom-item">Add to cart</button>
             </div>
             <div class="item">
-                <span class="item-title">Box</span>
-                <img src="/plant-shop/imgs/img5.jpg" alt="plantOne" class="img-item">
-                <span class="item-price">30€</span>
-                <button class="item-butom">Add to Cart</button>
+                <span class="item-title">Silver All</span>
+                <img src="imgs/img5.jpg" alt="" class="img-item">
+                <span class="item-price">45€</span>
+                <button class="buttom-item">Add to cart</button>
             </div>
             <div class="item">
-                <span class="item-title">Box</span>
-                <img src="/plant-shop/imgs/img6.jpg" alt="plantOne" class="img-item">
-                <span class="item-price">30€</span>
-                <button class="item-butom">Add to Cart</button>
+                <span class="item-title">Skin Glam</span>
+                <img src="imgs/img6.jpg" alt="" class="img-item">
+                <span class="item-price">190€</span>
+                <button class="buttom-item">Add to cart</button>
             </div>
             <div class="item">
-                <span class="item-title">Box</span>
-                <img src="/plant-shop/imgs/img7.jpeg" alt="plantOne" class="img-item">
-                <span class="item-price">30€</span>
-                <button class="item-butom">Add to Cart</button>
+                <span class="item-title">Midimix</span>
+                <img src="imgs/img7.jpeg" alt="" class="img-item">
+                <span class="item-price">215€</span>
+                <button class="buttom-item">Add to cart</button>
             </div>
             <div class="item">
-                <span class="item-title">Box</span>
-                <img src="/plant-shop/imgs/img8.jpeg" alt="plantOne" class="img-item">
-                <span class="item-price">30€</span>
-                <button class="item-butom">Add to Cart</button>
+                <span class="item-title">Sir Blue</span>
+                <img src="imgs/img8.jpeg" alt="" class="img-item">
+                <span class="item-price">324€</span>
+                <button class="buttom-item">Add to cart</button>
             </div>
         </div>
-        <!--shopping cart-->
-        <div class="shopping-cart">
+        <!-- carts -->
+        <div class="cart" id="cart">
             <div class="header-cart">
-                <h2>Your Cart</h2>
+                <h2>Your cart</h2>
             </div>
 
-            <div class="items-cart">
-                <div class="item-cart">
-                    <img src="imgs/img1.jpeg" alt="img shopping cart" class="img-shopping-cart">
-                    <div class="item-cart-details">
-                        <span class="cart-item-title"> Box</span>
-                        <div class="selector-amount">
-                            <i class="fa-solid fa-minus subtract-amount"></i>
-                            <input type="text" value="1" class="item-amount" disabled>
-                            <i class="fa-solid fa-plus add-amount"></i>
-                        </div>
-                        <span class="price-card">10.000€</span>
-                    </div>
-                    <span class="btn-delete">
-                        <i class="fa-solid fa-trash"></i>
-                    </span>
-                </div>
-                <div class="item-cart">
-                    <img src="imgs/img2.jpeg" alt="img shopping cart" class="img-shopping-cart">
-                    <div class="item-cart-details">
-                        <span class="cart-item-title"> Box</span>
-                        <div class="selector-amount">
-                            <i class="fa-solid fa-minus subtract-amount"></i>
-                            <input type="text" value="1" class="item-amount" disabled>
-                            <i class="fa-solid fa-plus add-amount"></i>
-                        </div>
-                        <span class="price-card">10.000€</span>
-                    </div>
-                    <span class="btn-delete">
-                        <i class="fa-solid fa-trash"></i>
-                    </span>
-                </div>
+            <div class="cart-items">
             </div>
-
-            <div class="total-cart">
+            <div class="cart-total">
                 <div class="row">
                     <strong>Your Total</strong>
-                    <span class="total-price-cart">
-                        120.000€
+                    <span class="cart-total-price">
+                        500€
                     </span>
                 </div>
-                <button class="pay-cart">
-                    Pay<i class="fa-solid fa-bag-shopping"></i>
-                </button>
+                <button class="btn-pay">Pay <i class="fa-solid fa-bag-shopping"></i> </button>
             </div>
         </div>
     </section>
-    <footer>
-        <span> Jose Antonio Martinez Fraile ©</span>
-    </footer>
 </body>
 </html>

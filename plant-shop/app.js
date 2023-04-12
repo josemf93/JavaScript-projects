@@ -189,4 +189,12 @@ function actualizarTotalcart(){
     total = Math.round(total * 100)/100;
 
     document.getElementsByClassName('cart-total-price')[0].innerText = +total.toLocaleString("es") + ",00"+'€';
+
+    //Hago scroll hasta el div del carrito al clickar en añadir a la cesta
+    function scrolltoCart() {
+        const cartDiv = document.getElementById('cart');
+        cartDiv.scrollIntoView({behavior: 'smooth'});
+    }
+
+    scrolltoCart();
 }
